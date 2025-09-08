@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom styles that match your design */
+body {
+  @apply bg-light-blue text-black min-h-screen;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+/* Card styles matching your glassmorphism design */
+.card {
+  @apply bg-white px-8 py-10 rounded-lg shadow-lg w-full max-w-md;
+}
+
+/* Input styles - underline design */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  @apply w-full border-b-2 border-gray-300 py-2 px-1 focus:outline-none focus:border-blue-500 transition bg-white/80 rounded;
+}
+
+/* Button styles matching your gradient design */
+button {
+  @apply w-full bg-blue-gradient text-white py-3 rounded-lg font-semibold transition hover:bg-blue-gradient-hover shadow-md mt-4;
+}
+
+button:disabled {
+  @apply opacity-60 cursor-not-allowed;
+}
+
+/* Link styles */
+a {
+  @apply text-link-blue hover:text-hover-blue hover:underline transition;
+}
+
+/* Error message styles */
+.error-message {
+  @apply mt-4 text-red-600 text-center font-medium;
+}
+
+/* Success message styles */
+.success-message {
+  @apply mt-4 text-green-600 text-center font-medium;
+}
