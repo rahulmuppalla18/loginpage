@@ -2,6 +2,8 @@
 The goal is to create a clean, user-friendly, and responsive authentication interface that can later be expanded into a full-fledged application.**
 
 **📂 Project Structure**
+
+
 **my-app/
  ├── public/
  ├── src/
